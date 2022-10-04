@@ -31,7 +31,7 @@ export const validateParams = (params: { [key: string]: any }) => {
 
   for (let item in params) {
     !params[item] ? missingValues.push(item) : null;
-    Number(params[item]) == NaN ? missingValues.push(item) : null;
+    isNaN(Number(params[item])) ? missingValues.push(item) : null;
   }
 
   return missingValues;

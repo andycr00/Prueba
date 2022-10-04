@@ -27,7 +27,7 @@ const validateParams = (params) => {
     const missingValues = [];
     for (let item in params) {
         !params[item] ? missingValues.push(item) : null;
-        Number(params[item]) == NaN ? missingValues.push(item) : null;
+        isNaN(Number(params[item])) ? missingValues.push(item) : null;
     }
     return missingValues;
 };
