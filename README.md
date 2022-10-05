@@ -10,7 +10,7 @@ npm start
 
 Para ejecutar las pruebas se debe ejecutar:
 
-````
+```
 npm test
 ```
 
